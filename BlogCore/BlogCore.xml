@@ -1,0 +1,303 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BlogCore</name>
+    </assembly>
+    <members>
+        <member name="T:BlogCore.Models.BK_Articles">
+            <summary>
+            博客文章
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Articles.Article_id">
+            <summary>
+            博文ID
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Articles.User_id">
+            <summary>
+            发表用户ID
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Articles.Article_title">
+            <summary>
+            博文标题
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Articles.Article_content">
+            <summary>
+            博文内容
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Articles.Article_views">
+            <summary>
+            浏览量
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Articles.Article_comment_count">
+            <summary>
+            评论总数
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Articles.Article_date">
+            <summary>
+            发表时间
+            </summary>
+        </member>
+        <member name="T:BlogCore.Models.BK_Artitle_Label">
+            <summary>
+            文章设置标签表
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Artitle_Label.Id">
+            <summary>
+            ID 
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Artitle_Label.Article_id">
+            <summary>
+            文章ID
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Artitle_Label.Label_id">
+            <summary>
+            标签ID
+            </summary>
+        </member>
+        <member name="T:BlogCore.Models.BK_Artitle_Sort">
+            <summary>
+            文章分类表
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Artitle_Sort.Id">
+            <summary>
+            编号
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Artitle_Sort.Article_id">
+            <summary>
+            文章ID
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Artitle_Sort.Sort_id">
+             <summary>
+            分类ID 
+             </summary>
+        </member>
+        <member name="T:BlogCore.Models.BK_Comments">
+            <summary>
+            博客文章评论表
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Comments.comment_id">
+            <summary>
+            评论ID
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Comments.user_id">
+            <summary>
+            发表用户ID
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Comments.article_id">
+            <summary>
+            评论博文ID
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Comments.comment_like_count">
+            <summary>
+            点赞数
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Comments.comment_date">
+            <summary>
+            评论日期
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Comments.comment_content">
+            <summary>
+            评论内容
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Comments.parent_comment_id">
+            <summary>
+            父评论ID
+            </summary>
+        </member>
+        <member name="T:BlogCore.Models.BK_Labels">
+            <summary>
+            标签表
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Labels.ID">
+            <summary>
+            标签ID
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Labels.label_name">
+            <summary>
+            标签名称
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Labels.label_alias">
+            <summary>
+            标签别名
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Labels.label_description">
+            <summary>
+            标签描述
+            </summary>
+        </member>
+        <member name="T:BlogCore.Models.BK_Photo">
+            <summary>
+            博客照片
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Photo.photoid">
+            <summary>
+            照片Id
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Photo.place">
+            <summary>
+            照片地点
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Photo.title">
+            <summary>
+            照片标题
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Photo.content">
+            <summary>
+            照片内容
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Photo.cuttime">
+            <summary>
+            照片拍摄时间
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Photo.operators">
+            <summary>
+            照片操作人
+            </summary>
+        </member>
+        <member name="T:BlogCore.Models.BK_Sorts">
+            <summary>
+            分类表
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Sorts.Sort_Id">
+            <summary>
+            分类ID
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Sorts.Sort_Name">
+            <summary>
+            分类名称
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Sorts.Sort_Alias">
+            <summary>
+            分类别名
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Sorts.Sort_Description">
+            <summary>
+            分类描述
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Sorts.Parent_Sort_id">
+            <summary>
+            父分类ID
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Users.User_id">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Users.User_ip">
+            <summary>
+            用户IP
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Users.User_name">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Users.User_password">
+            <summary>
+            用户密码
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Users.User_email">
+            <summary>
+            用户邮箱
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Users.User_profile_photo">
+            <summary>
+            用户头像
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Users.User_registration_time">
+            <summary>
+            注册时间
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Users.User_birthday">
+            <summary>
+            用户生日
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Users.User_age">
+            <summary>
+            用户年龄
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Users.User_telephone_number">
+            <summary>
+            用户手机号
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_Users.User_nickname">
+            <summary>
+            用户昵称
+            </summary>
+        </member>
+        <member name="T:BlogCore.Models.BK_User_Friends">
+            <summary>
+            用户好友表
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_User_Friends.ID">
+            <summary>
+            编号
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_User_Friends.User_Id">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_User_Friends.User_Friends_Id">
+            <summary>
+            好友ID
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_User_Friends.User_note">
+            <summary>
+            好友备注
+            </summary>
+        </member>
+        <member name="P:BlogCore.Models.BK_User_Friends.User_status">
+            <summary>
+            好友状态
+            </summary>
+        </member>
+    </members>
+</doc>
