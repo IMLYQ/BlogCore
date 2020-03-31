@@ -24,6 +24,13 @@
 
   <ItemGroup>
     <Folder Include="Extensions\" />
+    <Folder Include="BLL\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 
