@@ -4,7 +4,7 @@ using System.Data;
 namespace BlogCore.Common
 {
     /// <summary>
-    /// 数据转换
+    /// 解析数据
     /// </summary>
     public class DataParser
     {

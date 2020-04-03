@@ -66,7 +66,7 @@ namespace BlogCore.DAL
             var s = Sugar.db.Ado.UseTran(() =>
             {
                 //更新用户信息，用户自增列不修改
-                UserDB.AsUpdateable(model).Where(it=>it.User_id==model.User_id).IgnoreColumns(it => it == "User_id").ExecuteCommand();
+                UserDB.AsUpdateable(model).Where(it => it.User_id == model.User_id).IgnoreColumns(it => it == "User_id").ExecuteCommand();
 
             });
 

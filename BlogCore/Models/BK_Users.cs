@@ -1,12 +1,17 @@
-﻿using System;
+﻿using SqlSugar;
+using System;
 
 namespace BlogCore.Models
 {
+    /// <summary>
+    /// 用户信息表
+    /// </summary>
     public class BK_Users
     {
         /// <summary>
         /// 用户ID
         /// </summary>
+        [SugarColumn(IsPrimaryKey = true, IsIdentity = true)]
         public int? User_id { get; set; }
         /// <summary>
         /// 用户IP
