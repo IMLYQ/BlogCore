@@ -7,7 +7,7 @@ namespace BlogCore.Models
         /// <summary>
         /// 用户ID
         /// </summary>
-        public int User_id { get; set; }
+        public int? User_id { get; set; }
         /// <summary>
         /// 用户IP
         /// </summary>

@@ -21,18 +21,16 @@ namespace BlogCore.DAL
         /// 新增用户
         /// </summary>
         /// <param name="model">用户实体</param>
-        /// <returns></returns>
+        /// <returns></returns> 
         public int Insert(BK_Users model)
         {
             var s = 0;
+            model.User_id = null;
             //启用事务
             var result = Sugar.db.Ado.UseTran(() =>
             {
-
-                if (UserDB.Insert(model))
-                {
-                    s = 1;
-                }
+                //执行不插入User_id列（数据库ID自增长）
+                UserDB.AsInsertable(model).IgnoreColumns(it => it == "User_id").ExecuteReturnIdentity();
             });
             if (result.IsSuccess)
             {
@@ -54,20 +52,21 @@ namespace BlogCore.DAL
         {
             return UserDB.DeleteById(ID);
         }
+
         /// <summary>
         /// 修改用户信息
         /// </summary>
         /// <param name="model"></param>
         /// <returns></returns>
+        [Obsolete]
         public bool Update(BK_Users model)
         {
             bool result = false;
             var s = Sugar.db.Ado.UseTran(() =>
             {
-                if (UserDB.Update(model))
-                {
-                    result = true;
-                }
+                //更新用户信息，用户自增列不修改
+                UserDB.AsUpdateable(model).Where(it=>it.User_id==model.User_id).IgnoreColumns(it => it == "User_id").ExecuteCommand();
+
             });
 
             if (s.IsSuccess)
