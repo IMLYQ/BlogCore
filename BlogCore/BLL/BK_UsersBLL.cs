@@ -39,9 +39,23 @@ namespace BlogCore.BLL
             return dal.Update(model);
         }
 
+        /// <summary>
+        /// 获取所有用户
+        /// </summary>
+        /// <returns></returns>
         public List<BK_Users> GetUsers() 
         {
             return dal.GetUsers();
+        }
+
+        /// <summary>
+        /// 通过用户ID查找用户
+        /// </summary>
+        /// <param name="id">用户ID</param>
+        /// <returns></returns>
+        public BK_Users GetUserByID(decimal id) 
+        {
+            return dal.GetUserByID(id);
         }
     }
 }

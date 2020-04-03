@@ -43,6 +43,7 @@ namespace BlogCore.DAL
             return s;
         }
 
+
         /// <summary>
         /// 通过ID删除
         /// </summary>
@@ -84,6 +85,17 @@ namespace BlogCore.DAL
         public List<BK_Users> GetUsers()
         {
             return UserDB.GetList();
+        }
+
+
+        /// <summary>
+        /// 通过用户id获取用户数据
+        /// </summary>
+        /// <param name="id">用户id</param>
+        /// <returns></returns>
+        internal BK_Users GetUserByID(decimal id)
+        {
+            return UserDB.GetById(id);
         }
 
     }
